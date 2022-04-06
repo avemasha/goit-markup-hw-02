@@ -12,7 +12,6 @@ body {
   color: var(--primary-text-color);
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
 }
 
 .list {
@@ -26,7 +25,7 @@ body {
 .logo {
   color: #000000;
   font-family: "Raleway";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -43,7 +42,7 @@ body {
 }
 .nav .link {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -56,7 +55,7 @@ body {
 .contacts .link {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -72,7 +71,7 @@ body {
 }
 .hero-title {
   color: var(--main-background-color);
-  font-style: normal;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -81,6 +80,7 @@ body {
   text-transform: uppercase;
 }
 .hero .button {
+  cursor: pointer;
   color: var(--main-background-color);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
@@ -148,7 +148,7 @@ body {
 .footer .adress-map {
   color: var(--main-background-color);
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -161,7 +161,7 @@ body {
 .footer .adress-contact {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
