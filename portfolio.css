@@ -3,12 +3,12 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --contacts-text-color: rgba(255, 255, 255, 0.6);
-  --main-background-color: #ffffff;
-  --hero-footer-background-color: #2f303a;
-  --staff-background-color: #f5f4fa;
   --logo-web-color: #000000;
-}
+  --button-background-color: #f5f4fa;
+  --hero-footer-background-color: #2f303a;
 
+  --main-background-color: #ffffff;
+}
 body {
   color: var(--primary-text-color);
   background-color: var(--main-background-color);
@@ -16,7 +16,6 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
-
 .list {
   list-style: none;
 }
@@ -67,81 +66,36 @@ body {
 .contacts .link:hover {
   color: var(--accent-color);
 }
-
-/* hero */
-.hero {
-  background-color: var(--hero-footer-background-color);
-}
-.hero-title {
-  color: var(--main-background-color);
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.hero .button {
+/* main */
+/* buttons */
+.button {
   cursor: pointer;
+  color: var(--title-text-color);
+  border-color: var(--button-background-color);
+
+  background-color: var(--button-background-color);
+  font-family: "Roboto";
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.button:focus,
+.button:hover {
   color: var(--main-background-color);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
 }
-/* Section 2 - our features*/
-.features .section-title {
-  display: none;
-}
-.features .feature-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.features .feature-paragraph {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-.section .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.work-image {
+/* images */
+.image {
   width: 370px;
   height: 294px;
   left: 215px;
-  top: 1061px;
+  top: 262px;
 }
-
-/* Section 3 our staff */
-.our-team {
-  background-color: var(--staff-background-color);
-}
-.members .member-name {
+.image-title {
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
 }
-.members .member-speciality {
-}
-.members .member-job {
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
 /* footer */
 .footer {
   background-color: var(--hero-footer-background-color);
