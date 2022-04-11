@@ -36,9 +36,7 @@ body {
 .logo-web {
   color: var(--accent-color);
 }
-.logo:hover {
-  color: var(--accent-color);
-}
+
 .nav .link,
 .section-title {
   color: var(--title-text-color);
@@ -52,7 +50,8 @@ body {
   letter-spacing: 0.02em;
 }
 .nav .link:hover,
-.nav .link:focus {
+.nav .link:focus,
+.nav .link.current {
   color: var(--accent-color);
 }
 .contacts .link {
@@ -139,7 +138,46 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+/* portfolio */
+/* main */
+/* buttons */
+.button {
+  cursor: pointer;
+  color: var(--title-text-color);
+  border-color: var(--staff-background-color);
 
+  background-color: var(--staff-background-color);
+  font-family: "Roboto";
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.button:focus,
+.button:hover {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+/* images */
+.image {
+  width: 370px;
+  height: 294px;
+  left: 215px;
+  top: 262px;
+}
+.link .image-title {
+  color: var(--title-text-color);
+}
+.link .image-paragraph {
+  color: var(--primary-text-color);
+}
+.projects-item {
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+}
 /* footer */
 .footer {
   background-color: var(--hero-footer-background-color);
@@ -164,7 +202,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .footer .adress-contact:hover {
