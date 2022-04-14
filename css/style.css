@@ -16,6 +16,24 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .list {
   list-style: none;
@@ -23,8 +41,22 @@ body {
 .link {
   text-decoration: none;
 }
+/* CONTAINER */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 
+  margin-left: auto;
+  margin-right: auto;
+}
+/* HEADER */
+.page-header {
+  background-color: var(--main-background-color);
+  max-height: 80px;
+}
 /* site nav */
+
 .logo {
   color: var(--logo-web-color);
   font-family: "Raleway";
@@ -45,7 +77,7 @@ body {
   font-family: "Roboto", sans-serif;
 
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
@@ -59,7 +91,7 @@ body {
   font-family: "Roboto", sans-serif;
 
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
@@ -71,39 +103,66 @@ body {
 .hero {
   background-color: var(--hero-footer-background-color);
 }
+
 .hero-title {
   color: var(--main-background-color);
-
+  margin-top: 200px;
+  margin-bottom: 30px;
+  margin-left: 452px;
+  margin-right: 452px;
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
 }
 .hero .button {
+  display: inline-block;
   cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-bottom: 294px;
   color: var(--main-background-color);
+
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  text-decoration: none;
   letter-spacing: 0.06em;
+  text-align: center;
+
+  border-color: var(--accent-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 /* Section 2 - our features*/
-.features .section-title {
+.features-list {
+  margin-bottom: 94px;
+}
+.feature {
+  width: 270px;
+  margin-right: 30px;
+}
+.features-list .section-title {
   display: none;
 }
-.features .feature-title {
-  color: var(--title-text-color);
 
+.features-list .feature-title {
+  color: var(--title-text-color);
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.features .feature-paragraph {
-  font-size: 14px;
+.features-list .feature-paragraph {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
@@ -112,6 +171,13 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+}
+h2 {
+  margin-bottom: 50px;
+}
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.work {
+  margin-bottom: 94px;
 }
 .work-image {
   width: 370px;
@@ -124,15 +190,17 @@ body {
 .our-team {
   background-color: var(--staff-background-color);
 }
+.members {
+  margin-bottom: 94px;
+}
 .members .member-name {
   color: var(--title-text-color);
-
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.members .member-speciality {
-}
+
 .members .member-job {
   font-size: 16px;
   line-height: 1.2;
@@ -199,7 +267,7 @@ body {
   color: var(--main-background-color);
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-size: 14px;
+
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
@@ -211,7 +279,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-size: 14px;
+
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
